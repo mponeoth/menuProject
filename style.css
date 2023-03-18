@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+ .text-center{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+ .hover-border{
+    text-decoration: none;
+    position: relative;
+    color: black;
+ }
+ 
+ .hover-border::after{
+    content: '';
+    width: 25%;
+    height: 17px;
+    position:absolute;
+    background-color: navajowhite;
+    height: 7px;
+    bottom: 0%; left:50%; 
+    transition: all 500ms ease;
+    margin-bottom: -10px;
+ }
+
+ .hover-border:hover::after{
+   left: 0%;
+   width: 100%;      
+ }
+
+ .photo{
+   width: 250px;
+   height: 170px;
+   border-radius: 2%;
+   border: 5px solid burlywood;
+   margin-left: 30px;
+   margin-bottom: 10px;
+ }
+
+ .section-center{
+   margin: 10px 20px;
+   padding: 5px;
+   display: flex;
+   flex-flow:  wrap;
+ }
+
+  .price{
+    padding-left: 70px;
+    color:sandybrown;
+    font-size: 20px;
+  }
+
+    .item-text{
+      margin-top: 12px;
+      opacity: 0.5;
+      font-size: 18px; 
+    }
+
+   .item-info {
+      width: 400px;
+      height: 120px;
+   }
+   .menu-item{
+    margin-top:15px;
+    margin-right: 80px;
+   
+   }
+    
+   .item-text{
+    display: inline-block;
+   }
+
+   .underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: var(--clr-gold);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header{
+    display: flex;
+    direction: space-between;
+    gap: 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+  }
+
+  .menu-item > p {
+    margin-top: 1px solid black;
+  }
+
+  .btn-container {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-item {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+  }
+  .section {
+    padding: 5rem 0;
+  }
+  img {
+    display: block;
+  }
+
+  .section-center {
+    width: 300vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    gap: 3rem 2rem;
+    
+  }
+
+  .btn-container > button{
+    margin-top: 50px;
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 5px;
+    background-color: darkorange;
+  }
+  
+  .btn-container > button:hover{
+    width: 80px;
+    height: 50px;
+    background-color: tomato;
+  }
